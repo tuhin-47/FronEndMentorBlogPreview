@@ -2,29 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Import Google Font Used By This design-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    * {
+      box-sizing: border-box;
+     }
+    body{
+      background-color: hsl(47, 88%, 63%);
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+    }
+
+    .box{
+      background-color: hsl(0, 0%, 100%);
+      width:375px ;
+      margin: auto;
+      margin-top: 2rem;
+      border-radius: 1rem;
+
+    }
+
+    .box > img {
+      width: 100%;
+      display: block;
+      padding: 1rem;
+      border-radius: 25px;
+    } 
+    
+    .highlight{
+      display: block;
+      margin-left: 1rem;
+      padding: 0.5rem;
+      font-weight: 700;
+      width: 30%;
+      border-radius: 5px;
+      text-align: center;
+      background-color: hsl(47, 88%, 63%);
+    }
+
+    .date{
+      display: block;
+      margin-left: 1rem;
+      margin-top: 1rem;
+
+    }
+
+    .box h2{
+      margin-left: 1rem;
+    }
+    .box p {
+      margin-left: 1rem;
+      text-align: left;
+    }
+
+    .box-footer {
+      margin-left: 1rem;
+      display: block;
+    }
+
+    .box-footer > span{
+      margin-left: 1rem;
+      font-weight: 700;
+      text-align: center;
+      
+    }
+
+    .attribution { 
+      margin-top: 10rem;
+      font-size: 11px; text-align: center; 
+    }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Learning
+  <div class="box">
 
-  Published 21 Dec 2023
+    <img src="assets/images/illustration-article.svg" alt="Blog Preview Image">
 
-  HTML & CSS foundations
+    <span class="highlight">Learning</span>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+  
+    <span class="date">Published 21 Dec 2023</span>
 
-  Greg Hooper
+  
+    <h2>HTML & CSS foundations</h2>
+
+  
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+    <div class="box-footer">
+      <img src="assets/images/image-avatar.webp" alt="Blog author image" >
+       <span>Greg Hooper</span>
+    </div>
+
+
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
